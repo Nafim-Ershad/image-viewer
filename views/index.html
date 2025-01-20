@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; style-src-elem 'self' https://fonts.googleapis.com;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>Image Viewer</title>
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="menubar">
+            <div class="menu">
+                <div class="button">File</div>
+                <div class="menu-content">
+                    <a href="#" class="submenu browse">Browse</a>
+                    <a href="#" class="submenu about">About</a>
+                    <a href="#" class="submenu quit">Quit</a>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="button">View</div>
+                <div class="menu-content">
+                    <a href="#" class="submenu fullscreen">Toggle Full Screen</a>
+                    <a href="#" class="submenu devtool">Toggle Developer Tools</a>
+                </div>
+            </div>
+    </div>
+        <div class="app-name">Image Viewer</div>
+        <div class="app-control">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="maximize"></div>
+        </div>
+    </nav>
+    <div id="image-container"></div>
+    <div class="carousel-controls">
+        <button id="prev-image">←</button> <!-- Add onclick event -->
+        <button id="next-image">→</button> <!-- Add onclick event -->
+    </div>
+    <script src="./scripts/menubar.js" defer></script>
+    <script src="./scripts/index.js" defer></script>
+</body>
+</html>
